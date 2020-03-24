@@ -1,0 +1,67 @@
+@import './reset.less';
+@import './index.less';
+
+body {
+  margin: 0;
+  background-image: linear-gradient(#f8f8f8, #f6f6f6); /* Standard syntax (must be last) */
+  background: no-repeat;
+  font-family: @font-family;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+code {
+  font-family: @code-font-family;
+}
+/* Flex styles */
+.Row_Flex{
+  display: flex;
+  flex-direction: row;
+}
+.Rev_Row_Flex{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.Col_Flex{
+  display: flex;
+  flex-direction: column;
+}
+.Rev_Col_Flex{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.Flex_1{
+  flex: 1;
+}
+.Flex_2{
+  flex: 2;
+}
+.Flex_3{
+  flex: 3;
+}
+.Flex_4{
+  flex: 4;
+}
+.Flex_5{
+  flex: 5;
+}
+
+.Vertical_Middle{
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.Horizontal_Middle{
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
