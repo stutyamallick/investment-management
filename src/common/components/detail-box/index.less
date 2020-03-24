@@ -1,0 +1,107 @@
+.detail-box-container {
+    width: 100%;
+    height: 7rem;
+    background-color: #1A8FBF;
+    font-weight: normal;
+    color: #fff;
+    -webkit-box-shadow: -1px 1px 7px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 7px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 7px -1px rgba(0,0,0,0.75);
+}
+
+.highlighted-section {
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+.regular-section {
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+.highlighted-section-value-container {
+    /* height: 100%; */
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.regular-section-value-container {
+    width: 43%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.value-container {
+    // padding: 5px;
+}
+
+.highlighted-value-text {
+    font-size: 3rem;
+    color: #EFB119;
+}
+
+.highlighted-display-text {
+    font-size: 1.5rem;
+}
+
+.regular-value-text {
+    font-size: 1.1rem;
+    padding: 2px 0;
+}
+
+/* Single Layout*/
+.single-section{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+.single-value-text{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    padding-bottom: 0.5rem;
+}
+.single-display-text{
+    text-align: center;
+    font-size: 0.8rem;
+    color: #fff;
+    padding-top: 0.5rem;
+}
+
+.regular-display-text {
+    font-size: 0.7rem;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 960px){
+    .highlighted-value-text {
+        font-size: 2.5rem;
+        color: #EFB119;
+    }
+    
+    .highlighted-display-text {
+        font-size: 1.25rem;
+    }
+    
+    .regular-value-text {
+        font-size: 1.0rem;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .regular-section-value-container {
+        width: 100%;
+    }
+    .detail-box-container{
+        height: 10rem;
+    }
+}

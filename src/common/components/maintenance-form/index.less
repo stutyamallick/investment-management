@@ -1,0 +1,254 @@
+.form_edit_all_text_container{
+    margin-top: -2rem;
+    height: 2rem;
+}
+.form_table {
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tableContainer {
+    padding: 05rem;
+    overflow: hidden;
+}
+
+.slideTableData {
+    max-height: 500px;
+    transition: max-height 0.6s;
+}
+
+.hideTableData {
+    transition: max-height 0.5s;
+    max-height: 0px;
+
+    .form_table_row {
+        display: none;
+    }
+}
+/* Form Table Header Styles starts*/
+
+.form_table_header {
+    background-color: #05375E;
+    text-align: center;
+    height: 2rem;
+    border-bottom: 0.5px solid #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.form_table_subHeader {
+    background-color: #1D4B6E;
+    text-align: center;
+    height: 2rem;
+    border-bottom: 0.5px solid #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.form_table_title_container {
+    width: 100%;
+    height: 2rem;
+}
+
+.form_table_title_inner_container {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.form_table_title {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.form_table_subHeader_title {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.form_table_header_btns_container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form_table_header_btns_inner_container {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+}
+
+.header_btn_grp {
+    display: flex;
+    width: 100px;
+    justify-content: flex-end;
+}
+
+.headerIcon {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.form_table_edit_icon {
+    width: 1rem;
+    transition: .50s all;
+}
+
+.form_table_edit_icon_clicked {
+    width: 1rem;
+    transform: scale(1.25, 1.25);
+    padding-left: 3px;
+}
+
+.form_table_save_icon {
+    width: 1rem;
+    transition: .50s all;
+}
+
+.form_table_edit_icon:hover {
+    cursor: pointer;
+    transform: scale(1.25, 1.25);
+    transition: .50s all;
+}
+
+.form_table_save_icon:hover {
+    cursor: pointer;
+    transform: scale(1.25, 1.25);
+    transition: .50s all;
+}
+
+/* Form Table Header Styles end*/
+
+/* Form Table Body Styles starts*/
+
+.form_table_row {
+    width: 100%;
+    // height: 1.75rem;
+    border-bottom: 1px solid #fff;
+}
+
+.form_table_row_display_cell {
+    background-color: #1D4B6E;
+    padding: 5px;
+    text-align: left;
+}
+
+.form_table_row_value_cell {
+    background-color: #50738E;
+}
+
+.form_table_row_display_cell_inner_ct {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.form_table_row_value_cell_inner_ct {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.form_table_display_label {
+    color: #fff;
+    font-size: 1rem;
+    // padding-left: 0.5rem;
+    line-height: 20px;
+}
+
+.form_table_value_label {
+    color: #fff;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+.form_editable_text_field {
+    border: none;
+    height: 1.3rem;
+    width: 92.5%;
+    margin-left: 0.5rem;
+    padding-left: 5px;
+    font-size: 1rem;
+}
+
+.form_editable_text_field:focus {
+    outline: none;
+}
+
+.form_editable_combo_field {
+    border: none;
+    height: 1.35rem;
+    width: 94%;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.form_editable_combo_field:focus {
+    outline: none;
+}
+
+/* Form Table Body Styles starts*/
+
+/* Form Button Styles starts*/
+
+.form_subService_btns_container {
+    position: absolute;
+    margin-top: 3px;
+    z-index: 1;
+}
+
+.form_sub_button_container {
+    width: 100%;
+}
+
+.form_sub_button {
+    width: 100%;
+    border: none;
+    background-color: #50738E;
+    height: 1.6rem;
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: 300;
+    text-align: left;
+}
+
+.form_sub_button:hover {
+    background-color: #05375e;
+}
+
+.form_sub_button:focus {
+    outline: none;
+}
+
+.edit_all_text_container{
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.edit_all_text{
+    text-decoration: none;
+    transition: .50s all;
+}
+.edit_all_text:hover{
+    text-decoration: underline;
+    transition: .50s all;
+}

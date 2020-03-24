@@ -1,0 +1,39 @@
+@import '../../../style/index.less';
+
+.react_autocomplete_container{
+    padding: 15px 20px;
+}
+
+.filter_title_container{
+    margin-bottom: 5px;
+}
+
+.filter_title{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4c4c4c;
+}
+
+/* Override styles for React Autocomplete component */
+.react_autocomplete_container input {
+    height: 20px;
+    width: 220px;
+    background-color: #EBEDED;
+    border: 1px solid #CCCCCC;
+    padding-left: 5px;
+}
+
+.react_autocomplete_container div div{
+    background-color: @btnBgColor !important;
+    padding: 5px;
+    z-index: 1;
+    
+    &:not(:last-child) {
+        border: 1px solid #colors[white];
+    }
+}
+
+.react_autocomplete_container div div div:hover{
+    background-color: @btnHoverColor !important;
+    color: #colors[white];
+}

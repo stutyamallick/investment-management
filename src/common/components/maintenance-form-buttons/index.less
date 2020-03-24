@@ -1,0 +1,82 @@
+@import '../../../style/index.less';
+
+/* Form Button Styles starts*/
+
+.form_button {
+    border: none;
+    background-color: @btnBgColor;
+    min-width: 120px;
+    height: 39px;
+    color: #fff;
+    cursor: pointer;
+    margin: 4px 14px;
+    font-size: 1rem;
+    border-radius: 2px;
+    font-weight: 400;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    &:hover {
+        background-color: @btnHoverColor;
+    }
+}
+
+.form_button.selected {
+    background-color: @btnSelectedColor;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
+}
+
+.form_button:focus {
+    outline: none;
+}
+
+.form_subService_btns_container {
+    position: absolute;
+    margin-top: 3px;
+    z-index: 1;
+}
+
+.form_sub_button_container {
+    width: 100%;
+}
+
+.form_sub_button {
+    width: 100%;
+    border: none;
+    background-color: #50738E;
+    height: 1.6rem;
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: 300;
+    text-align: left;
+}
+
+.form_sub_button:hover {
+    background-color: #05375e;
+}
+
+.form_sub_button:focus {
+    outline: none;
+}
+.form_edit_all_text_container{
+    margin-top: -2rem;
+    height: 2rem;
+}
+.edit_all_text_container{
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.edit_all_text{
+    text-decoration: none;
+    transition: .50s all;
+}
+.edit_all_text:hover{
+    text-decoration: underline;
+    transition: .50s all;
+}

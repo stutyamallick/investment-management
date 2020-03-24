@@ -1,0 +1,65 @@
+@import '../../../style/index.less';
+
+.user-avatar-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+   
+    @media only screen and (max-width: 768px) {
+       display: none;
+   }
+
+   .dropbtn {
+    background-color: #3498DB;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50% 50%;
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+ background-color: #2980B9;
+}
+
+.dropdown-content {
+ display: none;
+ cursor: pointer;
+ position: absolute;
+ background-color: #colors[white];
+ max-width: 100px;
+ width: 90px;
+ overflow: auto;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 1;
+ right: -26px;
+ top: 52px;
+}
+
+.dropdown-content a {
+ color: @textColor;
+ padding: 7px;
+ text-align: center;
+ text-decoration: none;
+ display: block;
+ font-weight: 500;
+ border-bottom: 1px solid;
+ 
+ &:last-child {
+     border-bottom: none;
+ }
+}
+
+ a:hover {
+     background-color: @btnHoverColor;
+     color: #colors[white];
+}
+
+.show {display: block;}
+}
