@@ -1,0 +1,127 @@
+.header-container {
+    width: 100%;
+    height: 4rem;
+}
+
+/* Aplication Icon styles */
+
+.app-icon-container {
+    position: absolute;
+    height: 100%;
+}
+
+.app-icon-inner-container {
+    padding-left: 0.5rem;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.app-icon {
+    height: 1.5rem;
+}
+
+/* Aplication Name styles */
+
+.app-name-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.app-name-inner-container {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.app-name-label {
+    color: #f6f6f6;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.app-user-action-item-container {
+    height: 100%;
+    position: absolute;
+    right: 4.5rem;
+}
+
+/* Application Icon and Name together styles */
+
+.app-icon-name-container {
+    display: none;
+}
+/* Aplication Search styles */
+
+.app-search-container {
+    float: left;
+    height: 100%;
+    width: 10rem;
+    margin-right: 1rem;
+}
+
+.search-icon-container {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-left: 35%;
+}
+
+.search-icon {
+    transform: scale(1.5, 1.5);
+    transition: .50s all;
+}
+
+.search-icon:hover {
+    cursor: pointer;
+    transform: scale(1.75, 1.75);
+    transition: .50s all;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    .app-name-label {
+        font-size: 1.1rem;
+    }
+    .app-user-action-item-container {
+        right: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .app-name-label {
+        font-size: 0.9rem;
+    }
+    .app-icon-container {
+        display: none;
+    }
+    .app-name-container {
+        display: none;
+    }
+    /* Application Icon and Name together styles */
+    .app-icon-name-container {
+        position: absolute;
+        height: 100%;
+        display: block;
+    }
+    .app-icon-name-inner-container {
+        padding-left: 0.5rem;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .app-icon-name-icon {
+        height: 0.6rem;
+    }
+}
